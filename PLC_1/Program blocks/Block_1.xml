@@ -219,32 +219,42 @@
         <Component Name="bit8" />
       </Symbol>
     </Access>
-    <Access Scope="LocalVariable" UId="23">
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="Data_block_1" />
+        <Component Name="bit9" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="24">
       <Symbol>
         <Component Name="out" />
       </Symbol>
     </Access>
-    <Part Name="O" UId="24">
-      <TemplateValue Name="Card" Type="Cardinality">2</TemplateValue>
+    <Part Name="O" UId="25">
+      <TemplateValue Name="Card" Type="Cardinality">3</TemplateValue>
     </Part>
-    <Part Name="Coil" UId="25" />
+    <Part Name="Coil" UId="26" />
   </Parts>
   <Wires>
-    <Wire UId="26">
-      <IdentCon UId="21" />
-      <NameCon UId="24" Name="in1" />
-    </Wire>
     <Wire UId="27">
-      <IdentCon UId="22" />
-      <NameCon UId="24" Name="in2" />
+      <IdentCon UId="21" />
+      <NameCon UId="25" Name="in1" />
     </Wire>
     <Wire UId="28">
-      <NameCon UId="24" Name="out" />
-      <NameCon UId="25" Name="in" />
+      <IdentCon UId="22" />
+      <NameCon UId="25" Name="in2" />
     </Wire>
     <Wire UId="29">
       <IdentCon UId="23" />
-      <NameCon UId="25" Name="operand" />
+      <NameCon UId="25" Name="in3" />
+    </Wire>
+    <Wire UId="30">
+      <NameCon UId="25" Name="out" />
+      <NameCon UId="26" Name="in" />
+    </Wire>
+    <Wire UId="31">
+      <IdentCon UId="24" />
+      <NameCon UId="26" Name="operand" />
     </Wire>
   </Wires>
 </FlgNet></NetworkSource>
